@@ -5,9 +5,9 @@ require_once __DIR__ . '/../lib/env.php';
 
 try {
     // Database credentials
-    $host = env('DB_HOST', 'localhost');
-    $dbname = env('DB_NAME', 'db_wisata');
-    $username = env('DB_USER', 'root');
+    $host = env('DB_HOST', '');
+    $dbname = env('DB_NAME', '');
+    $username = env('DB_USER', '');
     $password = env('DB_PASS', '');
 
     // DSN
@@ -45,3 +45,4 @@ function base_url(string $path = ''): string
 
     return rtrim($base, '/') . '/' . ltrim($path, '/');
 }
+
